@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>AI Thermal Cameras - Portfolio Item</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="AI Thermal Cameras Project Description" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* Custom Styling for Landscape Image */
+    .project-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .project-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .project-header h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
+    .project-header p {
+      font-size: 1.2rem;
+      color: #7f8c8d;
+      margin-top: 10px;
+    }
+
+    .project-overview {
+      margin-top: 30px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .project-features {
+      margin-top: 30px;
+    }
+
+    .project-features ul {
+      padding-left: 20px;
+      list-style-type: square;
+    }
+
+    .feature-title {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    /* Buttons and Links */
+    .project-buttons {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .readmore {
+      color: #007bff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .readmore:hover {
+      text-decoration: underline;
+    }
+
+    /* Project Screenshots */
+    .project-screenshots img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-screenshots .screenshot-item {
+      margin-bottom: 30px;
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 30px 0;
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .footer p {
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+
+    .footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Saumya Maurya</a>
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="container py-5">
+
+      <!-- Project Header Section -->
+      <div class="row project-header">
+        <div class="col-md-12">
+          <h2>AI Thermal Cameras</h2>
+          <p><em> Real-Time Public Health and Safety Monitoring</em></p>
+        </div>
+      </div>
+
+      <!-- Project Image Section -->
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <!-- Image set to landscape -->
+          <img src="img/thermal_banner.gif" alt="AI Thermal Cameras" class="project-image mb-4">
+        </div>
+      </div>
+
+      <!-- Project Overview -->
+      <div class="row project-overview">
+        <div class="col-md-12">
+          <h4 class="feature-title">Project Overview</h4>
+          <p><strong>The Challenge:</strong> Ensuring public health and safety in crowded environments, especially during health crises, has become a critical priority. Traditional systems often struggle to provide real-time insights, leaving critical gaps in monitoring and response. This project aims to address these challenges with an AI-powered thermal camera system.</p>
+
+          <p><strong>Our Solution:</strong> The AI Thermal Camera system integrates advanced thermal imaging technology and machine learning algorithms to provide a real-time solution for detecting elevated body temperatures and monitoring crowd density. This system allows for dynamic health advisories, real-time alerts, and advanced crowd management in environments such as airports, hospitals, and large public venues.</p>
+
+          <p><strong>Key Benefits:</strong> By automating temperature checks, monitoring crowd flow, and providing actionable insights, this system ensures better public health management, enhances safety, and prevents overcrowding. It plays a vital role in high-traffic environments and critical facilities during emergencies, such as the COVID-19 pandemic.</p>
+        </div>
+      </div>
+
+      <!-- Technologies and Features -->
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="feature-title">Technologies Used</h4>
+          <ul>
+            <li><strong>Python</strong>: The core programming language for real-time data processing and implementing system logic.</li>
+            <li><strong>YOLOv5</strong>: AI model used for real-time people detection and tracking in dynamic environments.</li>
+            <li><strong>SORT</strong>: An algorithm used to track and manage multiple individuals detected across video frames.</li>
+            <li><strong>Tesseract OCR</strong>: Optical Character Recognition technology used for extracting temperature data from thermal video feeds.</li>
+          </ul>
+        </div>
+
+        <div class="col-md-12 project-features">
+          <h4 class="feature-title">Project Features</h4>
+          <ul>
+            <li><strong>Real-Time People Detection & Tracking:</strong> Accurately tracks individuals in high-density crowds for health monitoring and safety management using YOLOv5 and SORT.</li>
+            <li><strong>Temperature Monitoring and Alerts:</strong> Automatically detects elevated body temperatures and triggers real-time alerts, helping identify health risks such as fever.</li>
+            <li><strong>Dynamic Health Messaging:</strong> Displays health advisories and safety instructions on digital signboards based on real-time temperature and crowd data, improving public safety.</li>
+            <li><strong>Advanced Occupancy Management:</strong> Monitors crowd density in real-time and dynamically adjusts occupancy limits to prevent overcrowding in sensitive environments like hospitals, airports, and event venues.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Project Screenshots -->
+      <div class="row project-screenshots">
+        <h4 class="feature-title col-md-12">Project Screenshots</h4>
+        <div class="col-md-4 screenshot-item">
+          <img src="img/thermal_1.png" alt="AI Thermal Camera Screenshot 1" class="screenshot-image">
+          <p class="text-center">Real-Time Temperature and Crowd Detection</p>
+        </div>
+
+        <div class="col-md-4 screenshot-item">
+          <img src="img/Signboard.png" alt="AI Thermal Camera Screenshot 2" class="screenshot-image">
+          <p class="text-center">Thermal Data with Health Safety Messaging</p>
+        </div>
+
+        <div class="col-md-4 screenshot-item">
+          <img src="img/Basic_architecture.png" alt="AI Thermal Camera Screenshot 3" class="screenshot-image">
+          <p class="text-center">Basic Architecture of the System</p>
+        </div>
+      </div>
+
+      <!-- GitHub Link -->
+      <div class="row project-buttons">
+        <div class="col-md-12 text-center">
+          <a href="https://github.com/vishnusn77/AI-thermal-cameras" target="_blank" class="readmore">View GitHub Repository</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright Saumya Maurya. All Rights Reserved</p>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="#"><span class="icofont-twitter"></span></a>
+          <a href="#"><span class="icofont-facebook"></span></a>
+          <a href="#"><span class="icofont-instagram"></span></a>
+          <a href="#"><span class="icofont-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
