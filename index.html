@@ -9,8 +9,8 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/fevicon/favicon-16x16.png" rel="icon">
+  <link href="img/fevicon/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
@@ -80,7 +80,7 @@
             <div id="filters" class="filters">
               <a href="#" data-filter="*" class="active">All</a>
               <a href="#" data-filter=".projects">Projects</a>
-              <a href="graphic-design.html" data-filter=".graphic-design">Graphic Design</a>
+              <a href="graphic-design.html" id="graphic-design-link" class="filter-link">Graphic Design</a> <!-- Updated link -->
               <a href="#" data-filter=".mobile">Mobile</a>
               <a href="#" data-filter=".web">Web</a>
             </div>
@@ -223,6 +223,27 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+  <!-- Custom JavaScript to disable filter on the graphic-design link -->
+  <script>
+    // Custom navigation behavior for the Graphic Design link
+    document.querySelector('#graphic-design-link').addEventListener('click', function(e) {
+      window.location.href = 'graphic-design.html'; // Navigate to graphic-design.html
+    });
+
+    // Handle filtering logic for the other links
+    const filterLinks = document.querySelectorAll('.filters a');
+    filterLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        if (this.id !== 'graphic-design-link') { // Only prevent default if it's not the "Graphic Design" link
+          event.preventDefault();
+          const filter = this.getAttribute('data-filter');
+          console.log('Apply filter:', filter);
+          // Implement your filter functionality here
+        }
+      });
+    });
+  </script>
+  
 
 </body>
 
