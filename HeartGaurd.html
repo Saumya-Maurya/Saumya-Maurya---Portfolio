@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Saumya Maurya - Portfolio</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Saumya Maurya's Portfolio: Mobile App Developer, AI Specialist, Data Science Expert" name="description">
   <meta content="portfolio, mobile app development, AI, data science, graphic design" name="keywords">
 
@@ -26,7 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -133,9 +132,6 @@
       text-decoration: underline;
     }
   </style>
-</head>
-
-<body>
 
   <main id="main">
     <div class="container py-5">
@@ -182,22 +178,43 @@
         </div>
       </div>
 
+      <!-- Conclusion & What We Learned -->
+      <div class="row project-overview">
+        <div class="col-md-12">
+          <h4 class="feature-title">Conclusion & What We Learned</h4>
+          <p><strong>Machine Learning in Healthcare:</strong> We applied machine learning techniques to a critical healthcare problem, demonstrating the power of data science in real-world applications.</p>
+
+          <p><strong>Effective Predictions:</strong> The project emphasized the importance of accurate predictions in healthcare to minimize false positives and false negatives, ensuring patients receive timely and accurate treatment.</p>
+
+          <p><strong>Automated Model Selection:</strong> By using AutoML (TPOT), we automated the tedious process of model selection and hyperparameter tuning, achieving optimized models with minimal manual intervention.</p>
+
+          <p><strong>Model Improvement:</strong> The effectiveness of Random Forest and TPOT AutoML in improving model performance shows the importance of exploring advanced models and optimization techniques.</p>
+
+          <p><strong>Real-World Impact:</strong> The model has the potential to be integrated into clinical settings, improving patient outcomes by providing doctors with reliable, data-driven insights into cardiovascular risk.</p>
+        </div>
+      </div>
+
       <!-- Model Evaluation and Performance -->
       <div class="row project-screenshots">
         <h4 class="feature-title col-md-12">Model Evaluation & Performance Metrics</h4>
-        <div class="col-md-4 screenshot-item">
-          <img src="img/roc_curve.png" alt="ROC Curve" class="screenshot-image">
+
+        <!-- First Image: ROC Curve -->
+        <div class="col-md-6 screenshot-item">
+          <img src="img/roc_curve.png" alt="ROC Curve" class="screenshot-image img-fluid">
           <p class="text-center">ROC Curve - Evaluating Model Performance</p>
         </div>
 
-        <div class="col-md-4 screenshot-item">
-          <img src="img/model_performance.png" alt="Model Evaluation" class="screenshot-image">
+        <!-- Second Image: Model Evaluation -->
+        <div class="col-md-6 screenshot-item">
+          <img src="img/heart_model_classifier.png" alt="Model Evaluation" class="screenshot-image img-fluid">
           <p class="text-center">Model Evaluation - Classifier Performance</p>
         </div>
+      </div>
 
-        <div class="col-md-4 screenshot-item">
-          <img src="img/metrics_summary.png" alt="Metrics Summary" class="screenshot-image">
-          <p class="text-center">Performance Metrics - Summary of Model Results</p>
+      <div class="row">
+        <div class="col-md-12 screenshot-item">
+          <img src="img/heartgaurd_confusion Matrix.png" alt="Confusion Matrix" class="screenshot-image img-fluid">
+          <p class="text-center">Confusion matrices for each model</p>
         </div>
       </div>
 
@@ -209,33 +226,53 @@
             <thead>
               <tr>
                 <th>Model</th>
-                <th>ROC AUC</th>
-                <th>Accuracy</th>
                 <th>Precision</th>
                 <th>Recall</th>
+                <th>F1-Score</th>
+                <th>Accuracy</th>
+                <th>Macro Avg Precision</th>
+                <th>Macro Avg Recall</th>
+                <th>Macro Avg F1-Score</th>
+                <th>Weighted Avg Precision</th>
+                <th>Weighted Avg Recall</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Logistic Regression</td>
-                <td>0.96</td>
-                <td>85%</td>
                 <td>0.90</td>
                 <td>0.82</td>
+                <td>0.86</td>
+                <td>0.85</td>
+                <td>0.85</td>
+                <td>0.86</td>
+                <td>0.85</td>
+                <td>0.86</td>
+                <td>0.85</td>
               </tr>
               <tr>
                 <td>Random Forest</td>
-                <td>0.96</td>
-                <td>92%</td>
-                <td>0.97</td>
-                <td>0.88</td>
+                <td>0.87</td>
+                <td>0.92</td>
+                <td>0.92</td>
+                <td>0.92</td>
+                <td>0.92</td>
+                <td>0.92</td>
+                <td>0.92</td>
+                <td>0.92</td>
+                <td>0.92</td>
               </tr>
               <tr>
                 <td>TPOT AutoML</td>
-                <td>0.96</td>
-                <td>87%</td>
-                <td>0.79</td>
-                <td>0.96</td>
+                <td>0.94</td>
+                <td>0.88</td>
+                <td>0.91</td>
+                <td>0.90</td>
+                <td>0.90</td>
+                <td>0.90</td>
+                <td>0.90</td>
+                <td>0.90</td>
+                <td>0.90</td>
               </tr>
             </tbody>
           </table>
@@ -253,7 +290,7 @@
   </main>
 
   <!-- Footer -->
- <div id="footer-placeholder"></div>
+  <div id="footer-placeholder"></div>
 
   <!-- Vendor JS Files -->
   <script src="vendor/jquery/jquery.min.js"></script>

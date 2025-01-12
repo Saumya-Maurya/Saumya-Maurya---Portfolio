@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Saumya Maurya - Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Saumya Maurya's Portfolio: Mobile App Developer, AI Specialist, Data Science Expert" name="description">
+  <meta content="portfolio, mobile app development, AI, data science, graphic design" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/fevicon/favicon-16x16.png" rel="icon">
+  <link href="img/fevicon/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Include the navbar.html using JavaScript -->
+  <div id="navbar-placeholder"></div>
+
+  <style>
+    body, p, h1, h2, h3, h4, ul {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #2c3e50;
+    }
+
+    .project-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .project-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .project-header h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
+    .project-header p {
+      font-size: 1.3rem;
+      color: #7f8c8d;
+      margin-top: 10px;
+    }
+
+    .project-overview {
+      margin-top: 40px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #2c3e50;
+    }
+
+    .feature-title {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #2c3e50;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+    }
+
+    .project-features ul {
+      padding-left: 30px;
+      list-style-type: square;
+      font-size: 1.1rem;
+    }
+
+    .project-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .readmore {
+      color: #007bff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .readmore:hover {
+      text-decoration: underline;
+    }
+
+    .project-screenshots img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-screenshots .screenshot-item {
+      margin-bottom: 40px;
+    }
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .footer p {
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+
+    .footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <main id="main">
+    <div class="container py-5">
+
+      <!-- Project Header Section -->
+      <div class="row project-header">
+        <div class="col-md-12">
+          <h2>Telco Customer Churn Prediction</h2>
+          <p><em>Data Analysis and Deep Learning for Predicting Customer Churn in Telecom</em></p>
+        </div>
+      </div>
+
+      <!-- Project Image Section -->
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <img src="img/customer churn.png" alt="Customer Churn Prediction" class="project-image mb-4">
+        </div>
+      </div>
+
+      <!-- Data Analysis Overview -->
+      <div class="row project-overview">
+        <div class="col-md-12">
+          <h4 class="feature-title">Data Analysis Overview</h4>
+          <p><strong>The Problem:</strong> Customer churn is a significant issue for telecom companies, and identifying customers at risk of leaving is essential for improving retention and reducing business losses. The challenge is to predict whether a customer will churn or not based on their demographic and usage data.</p>
+
+          <p><strong>Data Preprocessing:</strong> The dataset was cleaned and preprocessed before model building. This included:
+            <ul>
+              <li>Dropping irrelevant columns like `customerID`.</li>
+              <li>Handling missing values by filling with the mean or mode of the respective columns.</li>
+              <li>Encoding categorical variables using one-hot encoding to convert categorical columns like `gender`, `contract` into numerical representations.</li>
+            </ul>
+          </p>
+
+          <p><strong>Feature Engineering:</strong> We identified the key features that significantly impact churn prediction, such as:
+            <ul>
+              <li><strong>Contract Type:</strong> Customers with month-to-month contracts had a higher likelihood of churn.</li>
+              <li><strong>Tenure:</strong> Longer-tenured customers are less likely to churn.</li>
+              <li><strong>Payment Method:</strong> Customers who opted for electronic payment methods exhibited lower churn rates.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- Model Building and Evaluation -->
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="feature-title">Model Building and Evaluation</h4>
+          <p>Two models were trained and evaluated for this task: Neural Networks (NN) and Convolutional Neural Networks (CNN). We performed the following steps:</p>
+          <ul>
+            <li><strong>Train-Test Split:</strong> The dataset was split into training (80%) and testing (20%) sets.</li>
+            <li><strong>Model 1 - Neural Network:</strong> A simple neural network model with one hidden layer was built using Keras/TensorFlow. The network consisted of 64 neurons in the input layer, 32 neurons in the hidden layer, and a single output neuron for binary classification. The accuracy of the Neural Network model was 78.75%.</li>
+            <li><strong>Model 2 - Convolutional Neural Network (CNN):</strong> The CNN was implemented by reshaping the data to a 3D input format. The CNN model included a convolutional layer, max-pooling layer, flattening, and dense layers. The CNN model achieved an accuracy of 78.68%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Model Performance Comparison -->
+      <div class="row project-screenshots">
+        <h4 class="feature-title col-md-12">Model Performance Comparison</h4>
+        <div class="col-md-12 screenshot-item">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Accuracy (%)</th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>F1-Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Neural Network</td>
+                <td>78.75</td>
+                <td>0.85</td>
+                <td>0.82</td>
+                <td>0.83</td>
+              </tr>
+              <tr>
+                <td>Convolutional Neural Network (CNN)</td>
+                <td>78.68</td>
+                <td>0.84</td>
+                <td>0.81</td>
+                <td>0.82</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Insights and Key Findings -->
+      <div class="row project-overview">
+        <div class="col-md-12">
+          <h4 class="feature-title">Insights and Key Findings</h4>
+          <p>The following insights were derived from the data and model performance:
+            <ul>
+              <li><strong>Churn is Predictable:</strong> The models successfully predicted churn based on customer demographics and usage patterns.</li>
+              <li><strong>Model Performance:</strong> The Neural Network model marginally outperformed the CNN model, suggesting that fully connected layers were slightly more effective for this tabular data.</li>
+              <li><strong>Feature Importance:</strong> Features such as contract type, payment method, and tenure were critical in predicting churn, reinforcing their importance in customer retention strategies.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- Conclusion & Future Work -->
+      <div class="row project-overview">
+        <div class="col-md-12">
+          <h4 class="feature-title">Conclusion & Future Work</h4>
+          <p><strong>Conclusion:</strong> This analysis highlights the importance of data preprocessing, feature engineering, and model evaluation in predicting customer churn. The Neural Network model provided slightly better performance than the CNN model.</p>
+
+          <p><strong>Future Improvements:</strong> Future work could focus on:
+            <ul>
+              <li>Implementing oversampling techniques like SMOTE to address class imbalance.</li>
+              <li>Hyperparameter tuning and exploring more advanced models like XGBoost or Random Forest for improved accuracy.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- GitHub Link -->
+      <div class="row project-buttons">
+        <div class="col-md-12 text-center">
+          <a href="https://github.com/Saumya-Maurya/HeartGuard---Predicting-Cardiovascular-Risk" target="_blank" class="readmore">View GitHub Repository</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
