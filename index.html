@@ -30,43 +30,9 @@
 </head>
 
 <body>
-
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-2">
-          <ul class="custom-menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            < <!-- <li class="active"><a href="works.html">Works</a></li> -->
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 d-none d-md-block mr-auto">
-          <div class="tweet d-flex">
-            <span class="icofont-twitter text-white mt-2 mr-3"></span>
-            <div>
-              <p><em>Specializing in Mobile App Development, Graphic Design, AI, Data Science, and more. Let's connect!</em></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-none d-md-block">
-          <h3>Hire Me</h3>
-          <p>If you're looking for a Mobile App Developer, Graphic Designer, AI/ML Specialist, or Web Developer, feel free to get in touch! <br> <a href="mailto:sammaurya85@gmail.com">sammaurya85@gmail.com</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <nav class="navbar navbar-light custom-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Saumya Maurya</a>
-      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
-        <span></span>
-      </a>
-    </div>
-  </nav>
+  <!-- Include the navbar.html using JavaScript -->
+  <div id="navbar-placeholder"></div>
+  
 
   <main id="main">
     <div class="site-section site-portfolio">
@@ -193,23 +159,8 @@
 
   </main>
 
-  <!-- Footer -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <p class="mb-1">&copy; Copyright Saumya Maurya. All Rights Reserved</p>
-      </div>
-      <div class="col-sm-6 social text-md-right">
-        <a href="#"><span class="icofont-twitter"></span></a>
-        <a href="#"><span class="icofont-facebook"></span></a>
-        <a href="https://www.instagram.com/maurya.sam/profilecard/?igsh=MXhmMHBoanp2MmE2Mg==" target="_blank"><span class="icofont-instagram"></span></a>
-        <a href="https://www.linkedin.com/in/saumya-maurya-b55b5b10a/" target="_blank"><span class="icofont-linkedin"></span></a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+ <!-- Include the footer.html using JavaScript -->
+ <div id="footer-placeholder"></div>
 
   <!-- Vendor JS Files -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -223,28 +174,6 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
-  <!-- Custom JavaScript to disable filter on the graphic-design link -->
-  <script>
-    // Custom navigation behavior for the Graphic Design link
-    document.querySelector('#graphic-design-link').addEventListener('click', function(e) {
-      window.location.href = 'graphic-design.html'; // Navigate to graphic-design.html
-    });
-
-    // Handle filtering logic for the other links
-    const filterLinks = document.querySelectorAll('.filters a');
-    filterLinks.forEach(link => {
-      link.addEventListener('click', function(event) {
-        if (this.id !== 'graphic-design-link') { // Only prevent default if it's not the "Graphic Design" link
-          event.preventDefault();
-          const filter = this.getAttribute('data-filter');
-          console.log('Apply filter:', filter);
-          // Implement your filter functionality here
-        }
-      });
-    });
-  </script>
-  
-
 </body>
 
 </html>
